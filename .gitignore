@@ -1,0 +1,42 @@
+# Ignore some of the VC++ user-files
+*.csproj.user
+*.sdf
+*.suo
+*.ilk
+*.pdb
+*.exe
+*.lib
+*.docstates
+*.log
+*.exe
+*.opensdf
+*.psess
+*.vspx
+*.opendb
+*.vcxproj.user
+*.playlist
+
+# Ignore test results
+TestResults
+
+# Ignore the VS build folders
+**/obj/**
+**/bin/**
+.vs/**
+**/Debug
+**/Release
+**/x64/Debug
+**/x64/Release
+**/Win32/Debug
+**/Win32/Release
+
+# And some system's temp files
+*~
+*.tmp
+*.bak
+*.swp*
+
+# Other artifacts not to track
+packages/**
+*.html
+*.css
