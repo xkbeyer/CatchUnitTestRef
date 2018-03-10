@@ -35,4 +35,12 @@ TEST_CASE("Another test case", "[tag]")
    }
 }
 
+TEST_CASE("Third test case", "[tag]")
+{
+	int a = 5;
+	int b = 6;
+	REQUIRE(a == a);
+	FAIL_CHECK("Fail check");
+}
+
 }

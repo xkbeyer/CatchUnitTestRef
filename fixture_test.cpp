@@ -34,4 +34,10 @@ TEST_CASE_METHOD(TestWithFixture, "Fail message test", "[fixture]")
    FAIL("Not implemented!");
 }
 
+TEST_CASE_METHOD(TestWithFixture, "Fail message test in between", "[fixture]")
+{
+	CHECK(5 == 5);
+	REQUIRE(true);
+	FAIL("Not implemented!");
+}
 }

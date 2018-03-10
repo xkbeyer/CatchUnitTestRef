@@ -39,7 +39,21 @@ TEST_CASE("Test Case with Sections")
 		CHECK(25 == aVar);
 	}
 
+	SECTION("Section FAIL")
+	{
+		aVar += 2;
+		FAIL("Section N/A");
+	}
+
 	int a = 4;
 	CHECK(5 == a);
 }
 
+TEST_CASE("Sections with FAIL")
+{
+	CHECK(true);
+	SECTION("Section FAIL")
+	{
+		FAIL("Section N/A");
+	}
+}
