@@ -9,10 +9,8 @@
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
 #include <iostream>
-using namespace std;
 
 namespace CatchUnitTest {
-
 TEST_CASE("Simple test case", "[tag]")
 {
    REQUIRE(5 == 5);
@@ -42,5 +40,4 @@ TEST_CASE("Third test case", "[tag]")
 	REQUIRE(a == a);
 	FAIL_CHECK("Fail check");
 }
-
 }
