@@ -9,6 +9,7 @@
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
 #include <iostream>
+#include <cassert>
 
 namespace CatchUnitTest {
 TEST_CASE("Simple test case", "[tag]")
@@ -35,9 +36,10 @@ TEST_CASE("Another test case", "[tag]")
 
 TEST_CASE("Third test case", "[tag]")
 {
-	int a = 5;
-	int b = 6;
-	REQUIRE(a == a);
-	FAIL_CHECK("Fail check");
+   int a = 5;
+   int b = 6;
+   REQUIRE(a == a);
+   FAIL_CHECK("Fail check");
 }
+
 }
