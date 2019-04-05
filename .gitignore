@@ -1,20 +1,9 @@
 # Ignore some of the VC++ user-files
-*.csproj.user
-*.sdf
-*.suo
-*.ilk
-*.pdb
-*.exe
-*.lib
-*.docstates
-*.log
-*.exe
-*.opensdf
-*.psess
-*.vspx
-*.opendb
-*.vcxproj.user
-*.playlist
+**/*.pdb
+**/*.exe
+**/*.lib
+**/*.obj
+**/*.vcxproj.user
 
 # Ignore test results
 TestResults
@@ -22,7 +11,7 @@ TestResults
 # Ignore the VS build folders
 **/obj/**
 **/bin/**
-.vs/**
+**/.vs/**
 **/Debug
 **/Release
 **/x64/Debug
@@ -31,12 +20,16 @@ TestResults
 **/Win32/Release
 
 # And some system's temp files
-*~
-*.tmp
-*.bak
-*.swp*
+**/*~
+**/*.tmp
+**/*.bak
+**/*.swp*
 
 # Other artifacts not to track
 packages/**
-*.html
-*.css
+**/*.html
+**/*.css
+**/*.txt
+**/*.xml
+**/*.output
+**/*.cases
