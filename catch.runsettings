@@ -11,9 +11,9 @@
     </TestExeInclude>
     -->
     <!-- If this regex matches, the exe is excluded even if it matches the include. -->
-    <TestExeExclude>
+    <!--TestExeExclude>
       <Regex>AnotherTest\.exe</Regex>
-    </TestExeExclude>
+    </TestExeExclude -->
   </CatchAdapter>
 
 </RunSettings>
